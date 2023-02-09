@@ -199,7 +199,7 @@
               <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="TransactoinRow isnot Nothing" />
             </Transition.Condition>
             <Transition.To>
-              <State x:Name="__ReferenceID5" DisplayName="Create Quote" sap:VirtualizedContainerService.HintSize="446.6666666666667,724.6666666666666" sap2010:WorkflowViewState.IdRef="State_15">
+              <State x:Name="__ReferenceID5" DisplayName="Create Quote" sap:VirtualizedContainerService.HintSize="446.6666666666667,957.3333333333334" sap2010:WorkflowViewState.IdRef="State_15">
                 <State.Entry>
                   <Sequence sap:VirtualizedContainerService.HintSize="400,354" sap2010:WorkflowViewState.IdRef="Sequence_38">
                     <sap:WorkflowViewStateService.ViewState>
@@ -242,7 +242,15 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <State.Exit>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="Info" Message="[&quot;Create quote button click end&quot;]" />
+                  <Sequence sap:VirtualizedContainerService.HintSize="400,342.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,96" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="Info" Message="[&quot;Create quote button click end&quot;]" />
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,96" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Info" Message="[&quot;Create quote button click end&quot;]" />
+                  </Sequence>
                 </State.Exit>
                 <State.Transitions>
                   <Transition DisplayName="T4" sap:VirtualizedContainerService.HintSize="451.3333333333333,522.6666666666666" sap2010:WorkflowViewState.IdRef="Transition_14">
